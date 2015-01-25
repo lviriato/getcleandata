@@ -2,6 +2,7 @@
 Repo for Coursera course "Getting and Cleaning Data"
 
 Two R script files exist in the Repo:
+
 1. run_script.R
 2. readtidy.R
 
@@ -26,10 +27,12 @@ Basically, the data set represents 561 features and 10299 observations, collecte
 Main Directory: UCI HAR Dataset
    1. activity_labels.txt - names of the 6 activities
    2. features.txt - names of all 561 features (column names) in the train and test data sets
+
 train subdirectory
   1. subject_train.txt - the subject data for each observation (7352 rows) in the train data set
   2. X_train.txt - train data set (7352 rows x 561 columns)
   3. y_train.txt - train activity data for each observation (7352 rows) in the train data set
+  
 test subdirectory
   1. subject_test.txt - the subject data for each observation (2947 rows) in the test data set
   2. X_test.txt - test data set (2947 rows x 561 columns)
