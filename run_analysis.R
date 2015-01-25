@@ -54,20 +54,53 @@ setwd("./UCI HAR Dataset/")
 FeatureHdrs = read.table("features.txt")
 ColHdrs = as.character(FeatureHdrs$V2)
 
-# Ensure all the header names are value R names
+# Ensure all the header names are value R names  
+# *** (I found easier ways to clean the headers later than the following few lines but 
+# *** decided to leave as is since it works, even if it's not pretty)
 CleanColHdrs = make.names(ColHdrs, unique = TRUE)
 
 # Remove the "..." from the column names
 CCHdrs = gsub("[.][.][.]", "_", CleanColHdrs)
 
 # Remove the ".." from the column names
-FinalColHdrs = gsub("[.][.]", "", CCHdrs)
+CCHdrs1 = gsub("[.][.]", "", CCHdrs)
+
+# Remove the duplicate "Body" in some of the column names
+CCHdrs2 = gsub("BodyBody", "Body", CCHdrs1)
+
+# Make some name changes to the column headers to make them more human readable
+CCHdrs3 = gsub("fB", "Freq.B", CCHdrs2)
+CCHdrs3 = gsub("tB", "Time.B", CCHdrs3)
+CCHdrs3 = gsub("tG", "Time.G", CCHdrs3)
+
+CCHdrs3 = gsub("BodyAcc", "Body.Accelerometer", CCHdrs3)
+CCHdrs3 = gsub("BodyGyro", "Body.Gyro", CCHdrs3)
+CCHdrs3 = gsub("GyroJerk", "Gyro.Jerk", CCHdrs3)
+CCHdrs3 = gsub("GyroMag", "Gyro.Magnitude", CCHdrs3)
+CCHdrs3 = gsub("JerkMag", "Jerk.Magnitude", CCHdrs3)
+CCHdrs3 = gsub("JerkMean", "Jerk.Mean", CCHdrs3)
+CCHdrs3 = gsub("terJerk", "ter.Jerk", CCHdrs3)
+CCHdrs3 = gsub("terMag", "ter.Magnitude", CCHdrs3)
+CCHdrs3 = gsub("terMean", "ter.Mean", CCHdrs3)
+CCHdrs3 = gsub("GravityAccMag", "Gravity.Accelerometer.Magnitude", CCHdrs3)
+CCHdrs3 = gsub("GravityAcc", "Gravity.Accelerometer", CCHdrs3)
+
+CCHdrs3 = gsub("angle", "Angle", CCHdrs3)
+CCHdrs3 = gsub("gravity", "Gravity", CCHdrs3)
+CCHdrs3 = gsub("MeanGrav", "Mean.Grav", CCHdrs3)
+CCHdrs3 = gsub("GyroMean", "Gyro.Mean", CCHdrs3)
+CCHdrs3 = gsub("yMean", "y.Mean", CCHdrs3)
+
+CCHdrs3 = gsub(".std", ".Std", CCHdrs3)
+CCHdrs3 = gsub(".mean", ".Mean", CCHdrs3)
+
+FinalColHdrs = gsub("MeanFreq", "Mean.Freq", CCHdrs3)
 
 # Read the activity label file to get all the supported activities
 ActLabels = read.table("activity_labels.txt")
 
 # go to the Train subdirectory
-setwd("./train")
+setwd("./train") 
 
 # Read the test feature, subject and activity data.   This data all has the same number of rows
 

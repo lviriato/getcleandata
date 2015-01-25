@@ -5,11 +5,16 @@ Two R script files exist in the Repo:
 1) run_script.R
 2) readtidy.R
 
-Script 1) is the script for the course project and produces 1 tidy data file (Tidy_UCI_Data.txt) as it's output.
+Script 1) is the script for the course project and produces 1 tidy data file (Tidy_UCI_Data.txt) as it's output.   The tidy data file contains a summary of the average values for all the features in the original UCI data set (see URL to zipped data below) that contain either the "mean" or "std" text, representing the mean and standard deviation features.  The tidy data file shows the data by Activity (6 values) and Subjects (1-30).
+
 Script 2) is here only for the convenience of the course markers so that they can load the resulting output file back into their R session using "source("readtidy.R")" and produce a data frame of that file called, "MyData".
 
 For script 1) to work, the data from the following URL must be loaded into the current working directory of R.
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+Once the files from the above zip file are in your working directory, along with the run_script.R script, excute the following commend in R or Rstudio.
+
+> source("run_script.R")
 
 Background:
 The details on this data set can be found at the following URL and in the feature_info.txt file in the main directory (UCI HAR Dataset) acquired from the above zip file. 
@@ -36,7 +41,7 @@ a) Reads in all the data files listed above.
 b) Merges the X Train and Test data sets (initially not including the subject and activity data)
 c) From the overall data set with 561 columns/features, only those with the words "mean" or "std" are kept.
 d) In the resulting combined data set there are 86 columns that match the above (c) criteria. 
-e) The activity numbers are replaced with activity labels/names and each column has an appropriate name.
+e) The activity numbers are replaced with activity labels/names and each column has an appropriate unique name.
 f) Finally a tidy data table is created that shows the average of each feature column in the data set defined by set (e), shown by Activity and Subject.
 g) The tidy data table is saved in the output file, "Tidy_UCI_Data.txt" 
 
