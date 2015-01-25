@@ -24,8 +24,8 @@ The columns in the tidy data set can be summarized as follows:
 
 - **Feature Columns**: The remaining 86 columns in the tidy data file represent the feature data for 53 features calculating the mean of a variable and 33 features calculating the standard deviation of a variable.  These variables are explained in more detail below. 
 
-## Feature Info 
-*This section is a subset of the content from feature_info.txt file in the original data file content; from the url above :
+## Feature Info:
+*This section is a subset of the content from feature_info.txt file in the original data file content; from the url above*
 
 *The following description is for the original data set.  The tidy data set contains ONLY the average of the feature values in each of the selected feature columns.*
 
