@@ -24,11 +24,12 @@ The columns in the tidy data set can be summarized as follows:
 
 - **Feature Columns**: The remaining 86 columns in the tidy data file represent the feature data for 53 features calculating the mean of a variable and 33 features calculating the standard deviation of a variable.  These variables are explained in more detail below. 
 
-## Feature Info (subset of the content from feature_info.txt file in the original data file content; from the url above :
+## Feature Info 
+*This section is a subset of the content from feature_info.txt file in the original data file content; from the url above :
 
 *The following description is for the original data set.  The tidy data set contains ONLY the average of the feature values in each of the selected feature columns.*
 
-**----------------------------------------------------------------------------------------------------------------------------------------**
+**-----------------------------------------------------------------------------------------------------------------------**
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
