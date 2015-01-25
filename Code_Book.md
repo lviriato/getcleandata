@@ -40,7 +40,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-* The variable names in this section are the ones used in the original data set.  The variable names in the Tidy data set are described later in the Code Book. *
+*The variable names in this section are the ones used in the original data set.  The variable names in the Tidy data set are described later in the Code Book.*
 
 - tBodyAcc-XYZ
 - tGravityAcc-XYZ
@@ -84,7 +84,7 @@ The few abbreviations that remain are:
 - Std - Standard Deviation
 - Gyro - Gyroscope
 
-* Note that all the original variables were normalized between [-1, 1] and are therefore unitless.*
+*Note that all the original variables were normalized between [-1, 1] and are therefore unitless.*
 
 - 1	Time.Body.Accelerometer.Mean_X
 - 2	Time.Body.Accelerometer.Mean_Y
@@ -149,7 +149,7 @@ The few abbreviations that remain are:
 - Std - Standard Deviation
 - Gyro - Gyroscope
 
-* Note that all the original variables were normalized between [-1, 1] and are therefore unitless.*
+*Note that all the original variables were normalized between [-1, 1] and are therefore unitless.*
 
 - 1	Time.Body.Accelerometer.Std_X
 - 2	Time.Body.Accelerometer.Std_Y
