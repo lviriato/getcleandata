@@ -141,7 +141,7 @@ The few abbreviations that remain are:
 - 53	Angle.Z.Gravity.Mean.
 
 
-# The Complete Standard Deviation Feature Name List (33):
+## The Complete Standard Deviation Feature Name List (33):
 The Tidy variable names are self explanitory and correspond to the explanation provided in the feature_info.txt file referenced above.  The Tidy variable names contain a few abbreviations since they were not ambiguous and helped keep the names as concise as possible but still intuitive to read and understand. 
 
 The few abbreviations that remain are:
