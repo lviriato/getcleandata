@@ -42,36 +42,36 @@ These signals were used to estimate variables of the feature vector for each pat
 
 * The variable names in this section are the ones used in the original data set.  The variable names in the Tidy data set are described later in the Code Book. *
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+-tBodyAcc-XYZ
+-tGravityAcc-XYZ
+-tBodyAccJerk-XYZ
+-tBodyGyro-XYZ
+-tBodyGyroJerk-XYZ
+-tBodyAccMag
+-tGravityAccMag
+-tBodyAccJerkMag
+-tBodyGyroMag
+-tBodyGyroJerkMag
+-fBodyAcc-XYZ
+-fBodyAccJerk-XYZ
+-fBodyGyro-XYZ
+-fBodyAccMag
+-fBodyAccJerkMag
+-fBodyGyroMag
+-fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+-mean(): Mean value
+-std(): Standard deviation
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+-gravityMean
+-tBodyAccMean
+-tBodyAccJerkMean
+-tBodyGyroMean
+-tBodyGyroJerkMean
 
 ## Note on Feature Units
 The original data set represented variables that were normalized to [-1,1] (per the README file in the original zip data) and were therefore unitless. 
@@ -86,59 +86,59 @@ The few abbreviations that remain are:
 
 * Note that all the original variables were normalized between [-1, 1] and are therefore unitless.*
 
-1	Time.Body.Accelerometer.Mean_X
-2	Time.Body.Accelerometer.Mean_Y
-3	Time.Body.Accelerometer.Mean_Z
-4	Time.Gravity.Accelerometer.Mean_X
-5	Time.Gravity.Accelerometer.Mean_Y
-6	Time.Gravity.Accelerometer.Mean_Z
-7	Time.Body.Accelerometer.Jerk.Mean_X
-8	Time.Body.Accelerometer.Jerk.Mean_Y
-9	Time.Body.Accelerometer.Jerk.Mean_Z
-10	Time.Body.Gyro.Mean_X
-11	Time.Body.Gyro.Mean_Y
-12	Time.Body.Gyro.Mean_Z
-13	Time.Body.Gyro.Jerk.Mean_X
-14	Time.Body.Gyro.Jerk.Mean_Y
-15	Time.Body.Gyro.Jerk.Mean_Z
-16	Time.Body.Accelerometer.Magnitude.Mean
-17	Time.Gravity.Accelerometer.Magnitude.Mean
-18	Time.Body.Accelerometer.Jerk.Magnitude.Mean
-19	Time.Body.Gyro.Magnitude.Mean
-20	Time.Body.Gyro.Jerk.Magnitude.Mean
-21	Freq.Body.Accelerometer.Mean_X
-22	Freq.Body.Accelerometer.Mean_Y
-23	Freq.Body.Accelerometer.Mean_Z
-24	Freq.Body.Accelerometer.Mean.Freq_X
-25	Freq.Body.Accelerometer.Mean.Freq_Y
-26	Freq.Body.Accelerometer.Mean.Freq_Z
-27	Freq.Body.Accelerometer.Jerk.Mean_X
-28	Freq.Body.Accelerometer.Jerk.Mean_Y
-29	Freq.Body.Accelerometer.Jerk.Mean_Z
-30	Freq.Body.Accelerometer.Jerk.Mean.Freq_X
-31	Freq.Body.Accelerometer.Jerk.Mean.Freq_Y
-32	Freq.Body.Accelerometer.Jerk.Mean.Freq_Z
-33	Freq.Body.Gyro.Mean_X
-34	Freq.Body.Gyro.Mean_Y
-35	Freq.Body.Gyro.Mean_Z
-36	Freq.Body.Gyro.Mean.Freq_X
-37	Freq.Body.Gyro.Mean.Freq_Y
-38	Freq.Body.Gyro.Mean.Freq_Z
-39	Freq.Body.Accelerometer.Magnitude.Mean
-40	Freq.Body.Accelerometer.Magnitude.Mean.Freq
-41	Freq.Body.Accelerometer.Jerk.Magnitude.Mean
-42	Freq.Body.Accelerometer.Jerk.Magnitude.Mean.Freq
-43	Freq.Body.Gyro.Magnitude.Mean
-44	Freq.Body.Gyro.Magnitude.Mean.Freq
-45	Freq.Body.Gyro.Jerk.Magnitude.Mean
-46	Freq.Body.Gyro.Jerk.Magnitude.Mean.Freq
-47	Angle.Time.Body.Accelerometer.Mean.Gravity.
-48	Angle.Time.Body.Accelerometer.Jerk.Mean.Gravity.Mean.
-49	Angle.Time.Body.Gyro.Mean.Gravity.Mean.
-50	Angle.Time.Body.Gyro.Jerk.Mean.Gravity.Mean.
-51	Angle.X.Gravity.Mean.
-52	Angle.Y.Gravity.Mean.
-53	Angle.Z.Gravity.Mean.
+-1	Time.Body.Accelerometer.Mean_X
+-2	Time.Body.Accelerometer.Mean_Y
+-3	Time.Body.Accelerometer.Mean_Z
+-4	Time.Gravity.Accelerometer.Mean_X
+-5	Time.Gravity.Accelerometer.Mean_Y
+-6	Time.Gravity.Accelerometer.Mean_Z
+-7	Time.Body.Accelerometer.Jerk.Mean_X
+-8	Time.Body.Accelerometer.Jerk.Mean_Y
+-9	Time.Body.Accelerometer.Jerk.Mean_Z
+-10	Time.Body.Gyro.Mean_X
+-11	Time.Body.Gyro.Mean_Y
+-12	Time.Body.Gyro.Mean_Z
+-13	Time.Body.Gyro.Jerk.Mean_X
+-14	Time.Body.Gyro.Jerk.Mean_Y
+-15	Time.Body.Gyro.Jerk.Mean_Z
+-16	Time.Body.Accelerometer.Magnitude.Mean
+-17	Time.Gravity.Accelerometer.Magnitude.Mean
+-18	Time.Body.Accelerometer.Jerk.Magnitude.Mean
+-19	Time.Body.Gyro.Magnitude.Mean
+-20	Time.Body.Gyro.Jerk.Magnitude.Mean
+-21	Freq.Body.Accelerometer.Mean_X
+-22	Freq.Body.Accelerometer.Mean_Y
+-23	Freq.Body.Accelerometer.Mean_Z
+-24	Freq.Body.Accelerometer.Mean.Freq_X
+-25	Freq.Body.Accelerometer.Mean.Freq_Y
+-26	Freq.Body.Accelerometer.Mean.Freq_Z
+-27	Freq.Body.Accelerometer.Jerk.Mean_X
+-28	Freq.Body.Accelerometer.Jerk.Mean_Y
+-29	Freq.Body.Accelerometer.Jerk.Mean_Z
+-30	Freq.Body.Accelerometer.Jerk.Mean.Freq_X
+-31	Freq.Body.Accelerometer.Jerk.Mean.Freq_Y
+-32	Freq.Body.Accelerometer.Jerk.Mean.Freq_Z
+-33	Freq.Body.Gyro.Mean_X
+-34	Freq.Body.Gyro.Mean_Y
+-35	Freq.Body.Gyro.Mean_Z
+-36	Freq.Body.Gyro.Mean.Freq_X
+-37	Freq.Body.Gyro.Mean.Freq_Y
+-38	Freq.Body.Gyro.Mean.Freq_Z
+-39	Freq.Body.Accelerometer.Magnitude.Mean
+-40	Freq.Body.Accelerometer.Magnitude.Mean.Freq
+-41	Freq.Body.Accelerometer.Jerk.Magnitude.Mean
+-42	Freq.Body.Accelerometer.Jerk.Magnitude.Mean.Freq
+-43	Freq.Body.Gyro.Magnitude.Mean
+-44	Freq.Body.Gyro.Magnitude.Mean.Freq
+-45	Freq.Body.Gyro.Jerk.Magnitude.Mean
+-46	Freq.Body.Gyro.Jerk.Magnitude.Mean.Freq
+-47	Angle.Time.Body.Accelerometer.Mean.Gravity.
+-48	Angle.Time.Body.Accelerometer.Jerk.Mean.Gravity.Mean.
+-49	Angle.Time.Body.Gyro.Mean.Gravity.Mean.
+-50	Angle.Time.Body.Gyro.Jerk.Mean.Gravity.Mean.
+-51	Angle.X.Gravity.Mean.
+-52	Angle.Y.Gravity.Mean.
+-53	Angle.Z.Gravity.Mean.
 
 
 # The Complete Standard Deviation Feature Name List (33):
@@ -151,38 +151,38 @@ The few abbreviations that remain are:
 
 * Note that all the original variables were normalized between [-1, 1] and are therefore unitless.*
 
-1	Time.Body.Accelerometer.Std_X
-2	Time.Body.Accelerometer.Std_Y
-3	Time.Body.Accelerometer.Std_Z
-4	Time.Gravity.Accelerometer.Std_X
-5	Time.Gravity.Accelerometer.Std_Y
-6	Time.Gravity.Accelerometer.Std_Z
-7	Time.Body.Accelerometer.Jerk.Std_X
-8	Time.Body.Accelerometer.Jerk.Std_Y
-9	Time.Body.Accelerometer.Jerk.Std_Z
-10	Time.Body.Gyro.Std_X
-11	Time.Body.Gyro.Std_Y
-12	Time.Body.Gyro.Std_Z
-13	Time.Body.Gyro.Jerk.Std_X
-14	Time.Body.Gyro.Jerk.Std_Y
-15	Time.Body.Gyro.Jerk.Std_Z
-16	Time.Body.Accelerometer.Magnitude.Std
-17	Time.Gravity.Accelerometer.Magnitude.Std
-18	Time.Body.Accelerometer.Jerk.Magnitude.Std
-19	Time.Body.Gyro.Magnitude.Std
-20	Time.Body.Gyro.Jerk.Magnitude.Std
-21	Freq.Body.Accelerometer.Std_X
-22	Freq.Body.Accelerometer.Std_Y
-23	Freq.Body.Accelerometer.Std_Z
-24	Freq.Body.Accelerometer.Jerk.Std_X
-25	Freq.Body.Accelerometer.Jerk.Std_Y
-26	Freq.Body.Accelerometer.Jerk.Std_Z
-27	Freq.Body.Gyro.Std_X
-28	Freq.Body.Gyro.Std_Y
-29	Freq.Body.Gyro.Std_Z
-30	Freq.Body.Accelerometer.Magnitude.Std
-31	Freq.Body.Accelerometer.Jerk.Magnitude.Std
-32	Freq.Body.Gyro.Magnitude.Std
-33	Freq.Body.Gyro.Jerk.Magnitude.Std
+-1	Time.Body.Accelerometer.Std_X
+-2	Time.Body.Accelerometer.Std_Y
+-3	Time.Body.Accelerometer.Std_Z
+-4	Time.Gravity.Accelerometer.Std_X
+-5	Time.Gravity.Accelerometer.Std_Y
+-6	Time.Gravity.Accelerometer.Std_Z
+-7	Time.Body.Accelerometer.Jerk.Std_X
+-8	Time.Body.Accelerometer.Jerk.Std_Y
+-9	Time.Body.Accelerometer.Jerk.Std_Z
+-10	Time.Body.Gyro.Std_X
+-11	Time.Body.Gyro.Std_Y
+-12	Time.Body.Gyro.Std_Z
+-13	Time.Body.Gyro.Jerk.Std_X
+-14	Time.Body.Gyro.Jerk.Std_Y
+-15	Time.Body.Gyro.Jerk.Std_Z
+-16	Time.Body.Accelerometer.Magnitude.Std
+-17	Time.Gravity.Accelerometer.Magnitude.Std
+-18	Time.Body.Accelerometer.Jerk.Magnitude.Std
+-19	Time.Body.Gyro.Magnitude.Std
+-20	Time.Body.Gyro.Jerk.Magnitude.Std
+-21	Freq.Body.Accelerometer.Std_X
+-22	Freq.Body.Accelerometer.Std_Y
+-23	Freq.Body.Accelerometer.Std_Z
+-24	Freq.Body.Accelerometer.Jerk.Std_X
+-25	Freq.Body.Accelerometer.Jerk.Std_Y
+-26	Freq.Body.Accelerometer.Jerk.Std_Z
+-27	Freq.Body.Gyro.Std_X
+-28	Freq.Body.Gyro.Std_Y
+-29	Freq.Body.Gyro.Std_Z
+-30	Freq.Body.Accelerometer.Magnitude.Std
+-31	Freq.Body.Accelerometer.Jerk.Magnitude.Std
+-32	Freq.Body.Gyro.Magnitude.Std
+-33	Freq.Body.Gyro.Jerk.Magnitude.Std
 
 
