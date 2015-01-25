@@ -2,8 +2,8 @@
 Repo for Coursera course "Getting and Cleaning Data"
 
 Two R script files exist in the Repo:
-1) run_script.R
-2) readtidy.R
+1. run_script.R
+2. readtidy.R
 
 Script 1) is the script for the course project and produces 1 tidy data file (Tidy_UCI_Data.txt) as it's output.   The tidy data file contains a summary of the average values for all the features in the original UCI data set (see URL to zipped data below) that contain either the "mean" or "std" text, representing the mean and standard deviation features.  The tidy data file shows the data by Activity (6 values) and Subjects (1-30).
 
@@ -24,25 +24,25 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Basically, the data set represents 561 features and 10299 observations, collected from 30 subjects performing 6 activities. The observations are split across two sets of data, the train and test data sets. 70% of the subjects are covered by the train data set and the remaining 30% are in the test data set.  The train and test data sets are stored in two corresponding directories.   The data used in this analysis are found in the following files and directories:
 
 Main Directory: UCI HAR Dataset
-   1) activity_labels.txt - names of the 6 activities
-   2) features.txt - names of all 561 features (column names) in the train and test data sets
+   1. activity_labels.txt - names of the 6 activities
+   2. features.txt - names of all 561 features (column names) in the train and test data sets
 train subdirectory
-  1) subject_train.txt - the subject data for each observation (7352 rows) in the train data set
-  2) X_train.txt - train data set (7352 rows x 561 columns)
-  3) y_train.txt - train activity data for each observation (7352 rows) in the train data set
+  1. subject_train.txt - the subject data for each observation (7352 rows) in the train data set
+  2. X_train.txt - train data set (7352 rows x 561 columns)
+  3. y_train.txt - train activity data for each observation (7352 rows) in the train data set
 test subdirectory
-  1) subject_test.txt - the subject data for each observation (2947 rows) in the test data set
-  2) X_test.txt - test data set (2947 rows x 561 columns)
-  3) y_test.txt - test activity data for each observation (2947 rows) in the test data set
+  1. subject_test.txt - the subject data for each observation (2947 rows) in the test data set
+  2. X_test.txt - test data set (2947 rows x 561 columns)
+  3. y_test.txt - test activity data for each observation (2947 rows) in the test data set
 
 Script 1) performs the following operations:
 
-a) Reads in all the data files listed above.
-b) Merges the X Train and Test data sets (initially not including the subject and activity data)
-c) From the overall data set with 561 columns/features, only those with the words "mean" or "std" are kept.
-d) In the resulting combined data set there are 86 columns that match the above (c) criteria. 
-e) The activity numbers are replaced with activity labels/names and each column has an appropriate unique name.
-f) Finally a tidy data table is created that shows the average of each feature column in the data set defined by set (e), shown by Activity and Subject.
-g) The tidy data table is saved in the output file, "Tidy_UCI_Data.txt" 
+1. Reads in all the data files listed above.
+2. Merges the X Train and Test data sets (initially not including the subject and activity data)
+3. From the overall data set with 561 columns/features, only those with the words "mean" or "std" are kept.
+4. In the resulting combined data set there are 86 columns that match the above (c) criteria. 
+5. The activity numbers are replaced with activity labels/names and each column has an appropriate unique name.
+6. Finally a tidy data table is created that shows the average of each feature column in the data set defined by set (e), shown by Activity and Subject.
+7. The tidy data table is saved in the output file, "Tidy_UCI_Data.txt" 
 
 The Code Book has more details on the data in the tidy data file. 
